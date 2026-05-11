@@ -56,20 +56,20 @@
 
         default_layer {
             bindings = <
-&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp JP_MINUS  &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp JP_AT  &kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &lt 6 K  &kp L  &kp SEMICOLON  &kp APOS  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp GRAVE  &kp JP_RBKT  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp JP_BSLH  &kp LALT  &kp LGUI  &layer_command 4 LC(A)  &layer_command 2 LC(C)  &kp SPACE  &lt 5 BACKSPACE  &kp JP_CARET  &kp JP_YEN  &tog 1  &mo 3  &kp LC(V)  &lt 1 ENTER  &kp ENTER  &tog 3  &kp LG(LS(S))  &kp ENTER  &mo 1  &mo 3  &mo 4  &mo 1  &mo 3  &mo 4  &mo 1  &mo 3  &mo 4
+&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp JP_MINUS  &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp JP_AT  &kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMICOLON  &kp APOS  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp LA(GRAVE)  &kp JP_RBKT  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp JP_BSLH  &kp LALT  &kp LGUI  &layer_command 4 LC(A)  &layer_command 2 LC(C)  &kp DELETE  &lt 5 ENTER  &kp JP_CARET  &kp JP_YEN  &mo 1  &mo 3  &kp LC(V)  &lt 2 ENTER  &kp ENTER  &tog 3  &kp LG(LS(S))  &kp SPACE  &mo 2  &mo 3  &mo 4  &mo 2  &mo 3  &mo 4  &mo 2  &mo 3  &mo 4
             >;
 
             sensor-bindings =
-                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>,
+                <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>,
                 <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         layer_1 {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &studio_unlock  &trans  &kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS  &trans  &kp PG_UP  &kp UP_ARROW  &kp PG_DN  &trans  &kp F12  &trans  &kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans  &trans  &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp EQUAL  &mkp MB4  &mkp MB5  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5  &bt BT_CLR_ALL  &bt BT_CLR  &trans  &trans  &trans  &studio_unlock  &trans  &kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS  &trans  &kp PG_UP  &kp UP_ARROW  &kp PG_DN  &trans  &kp F12  &trans  &kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans  &trans  &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp EQUAL  &mkp MB4  &mkp MB5  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(K_SCROLL_UP) LC(K_SCROLL_DOWN)>;
+            sensor-bindings = <&inc_dec_kp LC(K_SCROLL_DOWN) LC(K_SCROLL_UP)>;
         };
 
         layer_2 {
@@ -94,11 +94,11 @@
 
         layer_4 {
             bindings = <
-&kp LC(Z)  &kp LC(Y)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp TILDE2  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp LS(M)  &kp LS(O)  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &kp LS(E)  &kp LS(LC(R))  &trans  &trans  &kp LC(L)  &kp LS(LC(X))  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LC(C))  &kp LS(LC(S))  &trans  &trans  &trans  &kp LC(LS(K))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(O)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(Z)  &kp LC(Y)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp TILDE2  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp LS(M)  &kp LS(O)  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &kp LS(E)  &kp LS(LC(R))  &trans  &trans  &kp LC(L)  &kp LS(LC(X))  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LC(C))  &kp LS(LC(S))  &trans  &trans  &trans  &kp LC(LS(K))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LS(W))  &kp LC(O)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
+                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>,
                 <&inc_dec_kp J L>;
         };
 
